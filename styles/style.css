@@ -386,6 +386,8 @@ body {
   }
   .explore-img{
     grid-template-columns: repeat(1 , 1fr);
+    justify-content: center;
+    align-items: center;
     margin-left: 10px;
     gap: 5px;
   }
@@ -403,9 +405,10 @@ body {
   .experience-container{
     flex-direction: column;
     gap: 30px;
-   
-    
-  }
+   }
+   .explore-description{
+    font-size: 12px;
+   }
   .sponsor-icon{
     flex-direction: column;
     margin-bottom: 20px;
@@ -420,6 +423,9 @@ body {
   .f-text{
     padding: 5px;
     font-size: 12px;
+  }
+  .feature-button{
+     display: none;
   }
 }
 
