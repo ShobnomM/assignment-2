@@ -243,7 +243,7 @@ body {
   justify-content: center;
   gap: 150px;
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 140px;
 }
 
 .experience {
@@ -271,8 +271,31 @@ body {
 }
 
 /*   extra   */
-
-
+.build{
+  text-align: right;
+  font-size: 60px;
+  margin-right: 320px;
+}
+.build>span{
+  color: darkorange;
+}
+.project-text{
+  color: #727272;
+  font-size: 20px;
+  margin-top: 250px;
+}
+.project-container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.project-img{
+  transition: width .5s, height .5s, transform .5s;
+}
+.project-img:hover{
+  transform: scale(1.2);
+}
 /* sponsor */
 .sponsor {
   text-align: center;
@@ -319,43 +342,7 @@ body {
   font-size: 20px;
   color: #424242;
 }
-
-/* project-----------------------extra added */
-/* .project-title {
-  text-align: center;
-  font-size: 50px;
-  font-weight: 800;
-}
-
-.container {
-  display: grid;
-  width: 90%;
-  height: 350px;
-  position: relative;
-  place-items: center;
-  margin-top: 150px;
-  margin-bottom: 150px;
-}
-.slide-img{
-  height: 250px;
-  width: 250px;
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  perspective: 100px;
-}
-.slide-container {
-  display: flex;
-  width: 100%;
-  animation: scroll 3s linear infinite alternate;
-}
-
-.i {
-  width: 100%;
-  transition: transform 10s;
-  position: relative;
-}  */
-
+/* media query */
 @media only screen and (max-width: 576px) {
   .header{
     width: 100%;
@@ -373,6 +360,7 @@ body {
     }
     .nav-bar ul{
       margin: 0;
+      gap: 10px;
     }
   .nav-bar{
     justify-content: center;
@@ -381,14 +369,15 @@ body {
   .banner-title{
     font-size: 40px;
   }
+  /* explore */
   .container-explore{
     flex-direction: column-reverse;
-    margin-top: 15px;
+    margin:0;
+    margin-left: 10px;
   }
   .explore-img{
     grid-template-columns: repeat(1 , 1fr);
     justify-items: center;
-    margin-left: 10px;
     gap: 5px;
   }
   .container-feature{
@@ -398,17 +387,42 @@ body {
   .feature-img>img{
     width: 100%;
     margin: 5px;
+    margin-right: 5px;
   }
   .fact{
     margin-left: 20px;
   }
   .experience-container{
     flex-direction: column;
+    align-items: center;
     gap: 30px;
+    margin-bottom: 30px;
+    margin-top: 50px;
    }
    .explore-description{
     font-size: 12px;
    }
+   .explore-text {
+    margin-top: 10px;
+  }
+  /* project */
+  .build{
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .project-container{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 0;
+  }
+  .projrct-text{
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  /* sponsor */
   .sponsor-icon{
     flex-direction: column;
     margin-bottom: 20px;
@@ -426,6 +440,10 @@ body {
   }
   .feature-button{
      display: none;
+  }
+  .experience{
+    width: 70%;
+    padding: 10px;
   }
 }
 
